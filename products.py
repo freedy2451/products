@@ -10,3 +10,6 @@ for p in products:
     print("商品名稱為" + p[0] + ", 價格為" + p[1])
 
     
+with open('product.csv', 'w') as f:
+     for p in products:
+        f.write(p[0] + ',' + p[1] + '\n')
